@@ -1,25 +1,11 @@
-interface Products {
+interface Product {
   id: number;
   title: string;
 }
 
-interface Rating {
-  rating: number;
-}
-
-interface User {
-  username: string;
-}
-
-const usernames: User[] = [
-  { username: "alice" },
-  { username: "bob" },
-  { username: "charlie" },
-];
-
-const ratings: Rating[] = [{ rating: 4.5 }, { rating: 3.8 }, { rating: 5 }];
-
-const products: Products[] = [
+const usernames: string[] = ["alice", "bob", "charlie"];
+const ratings: number[] = [4.5, 3.8, 5];
+const products: Product[] = [
   { id: 1, title: "Phone" },
   { id: 2, title: "Laptop" },
 ];
